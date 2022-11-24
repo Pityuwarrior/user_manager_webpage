@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-image: url('../template/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+}
+.menuflex{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    flex: 0 0 auto;
+}
+nav{
+    z-index: 3;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+}
+nav ul li{
+    color: white;
+    display: inline-block;
+    line-height: 60px;
+    padding:  0 5px;
+    white-space: nowrap;
+    flex: 1 1 auto;
+}
+nav ul li a{
+    color: inherit;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 7px 13px;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+a:hover{
+    transition: .2s;
+    color: #00b7ff;
+}
+.flex_tajekoztato, .flex_kezdolap{
+    display: flex;
+    box-sizing: border-box;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    padding: 10%;
+}
+.flex_tajekoztato .flex_inner{
+    padding: 10px;
+}
+.flex_tajekoztato .flex_inner p{
+    padding-bottom: 10px;
+    text-align: left;
+}
+.flex_tajekoztato .flex_inner li{
+    color: white;
+}
+.flex_db{
+    display: flex;
+    box-sizing: border-box;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    padding: 10%;
+}
+.flex_inner{
+    background-color: rgb(40, 40, 40, 0.5);
+    padding: 20px;
+}
+.flex_inner p, .flex_inner span, h2{
+    color: rgb(220, 220, 220);
+}
+h2{
+    padding-bottom: 30px;
+    text-align: center;
+}
+.txt_filed{
+    padding-bottom: 10px;
+}
+.txt_filed span{
+    padding-right: 20px;
+}
+.txt_filed input{
+    float: right;
+}
+.button{
+    float: right;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .50rem 1rem;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.button:hover {
+background-color: rgb(249,250,251);
+}
+.flex_inner a:hover{
+    transition: .2s;
+    color: #00b7ff;
+    background:lightgray;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem; 
+}
+footer p{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+#clock{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+}
